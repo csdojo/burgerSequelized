@@ -1,0 +1,66 @@
+body{
+    background: #ffca63;
+    margin:0; 
+    padding:0; 
+    height:100%; 
+    width:100%; 
+}
+
+.backg{
+    position: absolute;
+}
+.burgerList{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 70px;
+    background: rgba(255, 255, 255, 0.877);
+    width:67%;
+    padding: 2%;
+    color: black;
+    border-radius: 20px;
+}
+
+.devouredList{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+    width:60%;
+    padding: 2%;
+    color: black;
+    z-index: 99;
+}
+
+.ateIt{
+    width: 250px;
+    margin-top:300px;
+    margin-left:50px;
+    position: absolute
+}
+
+
+h2{
+    margin-top:100px
+}
+
+.change-devour{
+    margin-left:10px;
+    float: right;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:20px;
+}
+
+li{
+    padding-top:12px;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:30px;
+}
+
+.create-form{
+    margin-top:20px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:27px;
+}
