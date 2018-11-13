@@ -6,7 +6,7 @@
 var Sequelize = require("sequelize");
 
 // database, username, password
-var sequelize = new Sequelize("burgers_data", "root", "268426845", {
+var sequelize = new Sequelize("burgers_data", "m09isay6a72efxul", "akpyx3547k5mi859", {
   host: "localhost",
   port: 3306,
   dialect: "mysql",
