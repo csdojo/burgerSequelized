@@ -1,4 +1,4 @@
-# Eat Da Burger
+# Sequelized Burgers
 :hamburger::hamburger::hamburger::hamburger::hamburger::hamburger::hamburger::hamburger:
 
 This app called Eat-Da-Burger! which is a restaurant app that lets users input the names of burgers they'd like to eat.
