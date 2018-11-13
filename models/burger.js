@@ -14,7 +14,7 @@ var Burger = sequelize.define("burger", {
   name: Sequelize.STRING,
   devoured :{
     type:Sequelize.BOOLEAN,
-    defaultValue: falase
+    defaultValue: false
   }
 });
 
