@@ -12,22 +12,12 @@ module.exports = function(app){
       res.json(data);
     });
   });
-  
-  app.post("/api/burgers", function(req, res) {
-    burger.create([
-      "name", "devoured"
-    ], [
-      req.body.name, req.body.devoured
-    ], function(result) {
-      // Send back the ID of the new quote
-      res.json({ id: result.insertId });
-    });
-  });
+
   
   app.post("/api/new", function(req, res) {
     console.log("Burger Data:");
     console.log(req.body);
-    Burger.create({
+    burger.create({
       name: req.body.name,
       devoured: req.body.devoured
 
@@ -40,7 +30,7 @@ module.exports = function(app){
   app.delete("/api/burger/:id", function(req, res) {
     console.log("Burger ID:");
     console.log(req.params.id);
-    Burger.destroy({
+    burger.destroy({
       where: {
         id: req.params.id
       }
