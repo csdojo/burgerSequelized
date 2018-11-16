@@ -5,15 +5,12 @@
 // =============================================================
 
 // This may be confusing but here Sequelize (capital) references the standard library
-var Sequelize = require("sequelize");
-// sequelize (lowercase) references our connection to the DB.
-var sequelize = require("../config/connection.js");
-
+module.exports = function(sequelize, DataTypes) {
 // Creates a "Burger" model that matches up with DB
 var Burger = sequelize.define("burger", {
-  name: Sequelize.STRING,
+  name: DataTypes.STRING,
   devoured :{
-    type:Sequelize.BOOLEAN,
+    type:DataTypes.BOOLEAN,
     defaultValue: false
   }
 });
@@ -22,5 +19,5 @@ var Burger = sequelize.define("burger", {
 Burger.sync({force:true});
 
 // Makes the Burger Model available for other files (will also create a table)
-module.exports = Burger;
-
+return Burger;
+}
